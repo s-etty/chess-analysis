@@ -10,3 +10,5 @@
 [Chess PGN Parser](https://github.com/datasherlock/chess-analytics/blob/main/Chess%20PGN%20Parser.py)
 
 [Definition of Blunder, Mistake, Inaccuracy](http://en.lichess.org/qa/75/how-are-these-determined-blunder-mistake-and-inaccuracy)
+
+[Plotting multiple lines with same color, but using hue to separate the lines](https://stackoverflow.com/questions/67221399/plotting-multiple-lines-with-same-color-but-using-hue-to-separate-the-lines)
