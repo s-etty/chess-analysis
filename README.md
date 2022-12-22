@@ -12,3 +12,5 @@
 [Definition of Blunder, Mistake, Inaccuracy](http://en.lichess.org/qa/75/how-are-these-determined-blunder-mistake-and-inaccuracy)
 
 [Plotting multiple lines with same color, but using hue to separate the lines](https://stackoverflow.com/questions/67221399/plotting-multiple-lines-with-same-color-but-using-hue-to-separate-the-lines)
+
+[How to read a column of csv as dtype list using pandas?](https://stackoverflow.com/questions/32742976/how-to-read-a-column-of-csv-as-dtype-list-using-pandas)
