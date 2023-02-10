@@ -1,6 +1,7 @@
 # chess-analysis
 
 ## Helpful Links, Resources, Etc.
+
 [Python Stockfish](https://github.com/zhelyabuzhsky/stockfish)
 
 [Python: Chess Blunder Detection and Using a PGN Database](https://www.youtube.com/watch?v=u2-ydOlWZU4)
@@ -14,3 +15,5 @@
 [Plotting multiple lines with same color, but using hue to separate the lines](https://stackoverflow.com/questions/67221399/plotting-multiple-lines-with-same-color-but-using-hue-to-separate-the-lines)
 
 [How to read a column of csv as dtype list using pandas?](https://stackoverflow.com/questions/32742976/how-to-read-a-column-of-csv-as-dtype-list-using-pandas)
+
+[How to Install Stockfish on Ubuntu](https://chess.stackexchange.com/questions/4353/how-to-install-stockfish-on-ubuntu) (particularly answers with chmod)
