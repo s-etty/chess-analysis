@@ -1,6 +1,6 @@
 # Chess Analysis
 
-This project is used to analyze my chess games from [Chess.com](https://www.chess.com). The goal of this project is to understand when I make blunders and mistakes, which blunders and mistakes I'm making, and hopefully, improve my chess game.
+This project is used to analyze my chess games from [Chess.com](https://www.chess.com). The goal of this project is to understand when I make blunders and mistakes, which blunders and mistakes I'm making, and, hopefully, improve my chess game.
 
 ## Skills Used
 
