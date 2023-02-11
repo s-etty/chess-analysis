@@ -10,6 +10,8 @@ import os
 stockfish = Stockfish(path="/home/sam/Desktop/stockfish_14_linux_x64/stockfish_14_x64", depth = 15,
                       parameters={"Threads": 2})
 
+# will want to include accuracy in here at somepoint, but don't want to rerun it all right now
+
 # get the score for a given move
 def get_scores(move, move_num):
     # if the move number is 0, i.e., the first move of a game, set the board position and evaluate
@@ -52,11 +54,14 @@ def load_scores(fp, games):
     else:
         return run_engine(games)
     
+    scored_games['game_date'] = pd.to_datetime(scored_games['game_date'])
     # with loaded scored games, get the max date
     max_date = scored_games['game_date'].max()
     # filter the games from the api call with the max date from the loaded scored games
-    unscored_games = games[games['game_date'] >= max_date]
+    # because >= is used, may re run the engine for games already scored, but will not miss any games
+    unscored_games = games[games['game_date'] >= max_date].copy()
     # run the engine on just the games that haven't been scored yet and append to the end of df
     scored_games = pd.concat([scored_games, run_engine(unscored_games)])
+    scored_games = scored_games.drop_duplicates(['game_link', 'move_number_actual'])
     
     return scored_games

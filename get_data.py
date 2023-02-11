@@ -100,6 +100,10 @@ def pgn_to_pandas(rows):
     #convert the date into a date object
     loaded_games['game_date'] = pd.to_datetime(loaded_games['game_date'])
     
+    #convert the elos to int
+    loaded_games['white_elo'] = loaded_games['white_elo'].astype(int)
+    loaded_games['black_elo'] = loaded_games['black_elo'].astype(int)
+    
     # explode the moves column. it is a column with each row containing a list
     loaded_games = loaded_games.explode('moves', ignore_index = True)
 
